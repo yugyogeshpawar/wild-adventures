@@ -1,0 +1,2274 @@
+import { Category, Product } from "../types";
+
+export const initialCategories: Category[] = [
+  {
+    "id": "cat_handbags",
+    "name": "Hand Bags",
+    "slug": "hand-bag",
+    "description": "Architectural silhouettes crafted in supple Italian full-grain leathers and hand-finished edge coatings.",
+    "imageUrl": "/images/products/handbags/classic-leather-tote.jpg",
+    "isActive": true,
+    "createdAt": "2026-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "cat_travel_duffels",
+    "name": "Travel & Duffel Bags",
+    "slug": "travel-duffels",
+    "description": "Premium cylindrical duffels, multi-compartment sports bags, and half-round weekenders built for effortless travel.",
+    "imageUrl": "/images/products/handbags/classic-tan-vegan-leather-duffel.jpg",
+    "isActive": true,
+    "createdAt": "2026-01-11T08:00:00.000Z"
+  },
+  {
+    "id": "cat_lunch_bags",
+    "name": "Special Lunch Bags",
+    "slug": "lunch-bags",
+    "description": "Curated collection of 30 distinctive designer lunch totes spanning diamond quilting, heritage checks, and playful prints.",
+    "imageUrl": "/images/products/handbags/lunch-bag-lb-01-midnight-quilted.jpg",
+    "isActive": true,
+    "createdAt": "2026-01-12T08:00:00.000Z"
+  },
+  {
+    "id": "cat_festive_collection",
+    "name": "Festive Travel Collection",
+    "slug": "festive-collection",
+    "description": "Curated Diwali 2026 festive collection featuring contemporary travel and duffle silhouettes with rich textures and smart detailing.",
+    "imageUrl": "/images/products/handbags/diwali-festive-style-01.jpg",
+    "isActive": true,
+    "createdAt": "2026-01-13T08:00:00.000Z"
+  },
+  {
+    "id": "cat_round_bags",
+    "name": "Digital Round Bags",
+    "slug": "round-bags",
+    "description": "Signature circular silhouettes engineered for bespoke graphics, promotional branding, and distinctive lifestyle carry.",
+    "imageUrl": "/images/products/handbags/custom-digital-round-bag-signature-monogram.jpg",
+    "isActive": true,
+    "createdAt": "2026-01-14T08:00:00.000Z"
+  },
+  {
+    "id": "cat_backpacks",
+    "name": "Backpacks",
+    "slug": "backpacks",
+    "description": "Refined, commuter-ready backpacks balancing minimalist utility with premium tactile materials.",
+    "imageUrl": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=80",
+    "isActive": true,
+    "createdAt": "2026-01-15T08:00:00.000Z"
+  },
+  {
+    "id": "cat_clutches",
+    "name": "Clutches",
+    "slug": "clutches",
+    "description": "Sculptural evening clutches and statement handhelds designed for unforgettable silhouettes.",
+    "imageUrl": "/images/products/handbags/monogram-clutch-wallet.jpg",
+    "isActive": true,
+    "createdAt": "2026-01-16T08:00:00.000Z"
+  },
+  {
+    "id": "cat_wallets",
+    "name": "Wallets",
+    "slug": "wallets",
+    "description": "Compact bi-folds, cardholders, and zip-around continental wallets crafted with micro-grain calfskin.",
+    "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1000&q=80",
+    "isActive": true,
+    "createdAt": "2026-01-17T08:00:00.000Z"
+  }
+];
+
+export const initialProducts: Product[] = [
+  {
+    "id": "prod_01",
+    "name": "Classic Leather Tote",
+    "slug": "classic-leather-tote",
+    "description": "An iconic silhouette handcrafted from buttery full-grain calfskin. Features reinforced dual handles, unlined raw suede interior, and a detachable zippered interior pouch for seamless city living.",
+    "price": 345,
+    "compareAtPrice": 420,
+    "categoryId": "cat_handbags",
+    "stock": 24,
+    "images": [
+      "/images/products/handbags/classic-leather-tote.jpg",
+      "/images/products/handbags/soft-nappa-tote.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Bestseller",
+      "Full Grain",
+      "Everyday"
+    ],
+    "sku": "HB-TOT-001",
+    "createdAt": "2026-01-15T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 38,
+    "materials": "100% Full-grain Tuscan Calf Leather, Solid Brass Hardware with brushed gold finish",
+    "dimensions": "14.5\" W x 11.8\" H x 5.5\" D (Strap drop: 9.5\")"
+  },
+  {
+    "id": "prod_02",
+    "name": "Crossbody Saddle Bag",
+    "slug": "crossbody-saddle-bag",
+    "description": "Inspired by equestrian heritage, this curved saddle bag combines structured architectural contours with a magnetic flap closure and an adjustable wide leather shoulder strap.",
+    "price": 285,
+    "compareAtPrice": 320,
+    "categoryId": "cat_handbags",
+    "stock": 15,
+    "images": [
+      "/images/products/handbags/saddle-crossbody-bag.jpg",
+      "/images/products/handbags/vintage-envelope-satchel.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Trending",
+      "Hands-Free",
+      "Classic"
+    ],
+    "sku": "HB-SDL-002",
+    "createdAt": "2026-01-16T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 29,
+    "materials": "Vegetable-tanned smooth leather, linen blend lining, custom curved buckle",
+    "dimensions": "9.2\" W x 7.5\" H x 3.2\" D (Strap drop: 19\"–23\")"
+  },
+  {
+    "id": "prod_03",
+    "name": "Quilted Evening Shoulder Bag",
+    "slug": "quilted-evening-shoulder-bag",
+    "description": "Exquisite diamond quilting in ultra-soft lambskin leather, finished with a polished jewelry-grade curb chain strap that easily transitions between shoulder and crossbody carry.",
+    "price": 395,
+    "categoryId": "cat_handbags",
+    "stock": 8,
+    "images": [
+      "/images/products/handbags/quilted-evening-shoulder-bag.jpg",
+      "/images/products/handbags/chain-strap-flap-bag.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "New",
+      "Luxury",
+      "Evening"
+    ],
+    "sku": "HB-QLT-003",
+    "createdAt": "2026-01-18T10:00:00.000Z",
+    "rating": 5,
+    "reviewCount": 16,
+    "materials": "Plonge Lambskin, 18k Light Gold Electroplated Metal Alloy Chain, Silk lining",
+    "dimensions": "10.0\" W x 6.2\" H x 2.8\" D"
+  },
+  {
+    "id": "prod_04",
+    "name": "Canvas Everyday Satchel",
+    "slug": "canvas-everyday-satchel",
+    "description": "Heavyweight 24oz organic cotton canvas paired with rich saddle leather trims. Built to carry laptops, journals, and weekend necessities with effortless coastal elegance.",
+    "price": 240,
+    "compareAtPrice": 280,
+    "categoryId": "cat_handbags",
+    "stock": 32,
+    "images": [
+      "/images/products/handbags/canvas-everyday-satchel.jpg",
+      "/images/products/handbags/artisan-leather-duffle-mini.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Sustainable",
+      "Workwear",
+      "Durable"
+    ],
+    "sku": "HB-STC-004",
+    "createdAt": "2026-01-20T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 42,
+    "materials": "100% Certified Organic Cotton Canvas, Vachetta Leather Trim, Antique Nickel Fasteners",
+    "dimensions": "13.0\" W x 10.5\" H x 4.8\" D"
+  },
+  {
+    "id": "prod_05",
+    "name": "Minimalist Leather Bucket Bag",
+    "slug": "minimalist-leather-bucket-bag",
+    "description": "A cylinder silhouette that stays upright on brass feet. Includes a leather drawstring inner cinch closure and a dual-purpose handheld loop plus crossbody strap.",
+    "price": 310,
+    "categoryId": "cat_handbags",
+    "stock": 5,
+    "images": [
+      "/images/products/handbags/minimalist-leather-bucket-bag.jpg",
+      "/images/products/handbags/sculptural-geometric-bag.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Minimalist",
+      "Low Stock"
+    ],
+    "sku": "HB-BKT-005",
+    "createdAt": "2026-01-22T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 19,
+    "materials": "Semi-aniline Box Calf, Microfiber suede lining, Cinch leather tie",
+    "dimensions": "8.0\" W x 9.5\" H x 6.0\" D"
+  },
+  {
+    "id": "prod_06",
+    "name": "Structured Top Handle Bag",
+    "slug": "structured-top-handle-bag",
+    "description": "The epitome of executive refinement. Trapezoid structured frame with reinforced gussets, a sleek push-lock closure, and an interior divider with phone and card slots.",
+    "price": 430,
+    "compareAtPrice": 480,
+    "categoryId": "cat_handbags",
+    "stock": 12,
+    "images": [
+      "/images/products/handbags/structured-top-handle-bag.jpg",
+      "/images/products/handbags/parisienne-crescent-bag.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Heritage",
+      "Structured",
+      "Statement"
+    ],
+    "sku": "HB-TPH-006",
+    "createdAt": "2026-01-25T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 22,
+    "materials": "Pebbled Calf Leather with scratch-resistant coat, Gold-tone twist clasp",
+    "dimensions": "11.5\" W x 8.8\" H x 4.0\" D (Handle drop: 4.0\")"
+  },
+  {
+    "id": "prod_07",
+    "name": "Woven Luxury Hobo Bag",
+    "slug": "woven-luxury-hobo-bag",
+    "description": "Individually hand-braided intrecciato leather strips creating a slouchy, crescent silhouette that moulds effortlessly under the arm. Ultra lightweight yet spacious.",
+    "price": 360,
+    "categoryId": "cat_handbags",
+    "stock": 3,
+    "images": [
+      "/images/products/handbags/woven-luxury-hobo-bag.jpg",
+      "/images/products/handbags/pleated-leather-pouch.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Handmade",
+      "Intrecciato",
+      "Low Stock"
+    ],
+    "sku": "HB-WVN-007",
+    "createdAt": "2026-01-28T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 31,
+    "materials": "Hand-woven Nappa Leather, Magnetic top snap, Hidden zip pouch",
+    "dimensions": "15.0\" W x 12.0\" H x 3.5\" D"
+  },
+  {
+    "id": "prod_08",
+    "name": "Croc-Embossed Baguette Bag",
+    "slug": "croc-embossed-baguette",
+    "description": "A nostalgic 90s silhouette remastered for the contemporary wardrobe. Glazed croc-embossed calf leather with a sculpted bevelled shoulder strap and slim profile.",
+    "price": 275,
+    "compareAtPrice": 310,
+    "categoryId": "cat_handbags",
+    "stock": 18,
+    "images": [
+      "/images/products/handbags/croc-embossed-baguette.jpg",
+      "/images/products/handbags/monogram-clutch-wallet.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Vintage Vibe",
+      "Croc Print"
+    ],
+    "sku": "HB-BGT-008",
+    "createdAt": "2026-02-01T10:00:00.000Z",
+    "rating": 4.6,
+    "reviewCount": 14,
+    "materials": "Embossed Cowhide Leather, Cotton twill interior, Silver-finish zip",
+    "dimensions": "10.5\" W x 5.5\" H x 2.2\" D"
+  },
+  {
+    "id": "prod_09",
+    "name": "Artisan Leather Mini Duffle",
+    "slug": "artisan-leather-duffle-mini",
+    "description": "Barrel-style mini duffle crafted in oiled pull-up leather that develops a magnificent patina over time. Includes dual rolled handles and an optional crossbody strap.",
+    "price": 295,
+    "categoryId": "cat_handbags",
+    "stock": 11,
+    "images": [
+      "/images/products/handbags/artisan-leather-duffle-mini.jpg",
+      "/images/products/handbags/classic-leather-tote.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Patina",
+      "Travel Ready"
+    ],
+    "sku": "HB-DFL-009",
+    "createdAt": "2026-02-05T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 12,
+    "materials": "Pull-up Full-grain Leather, YKK Excella two-way zipper",
+    "dimensions": "9.8\" W x 6.5\" H x 5.0\" D"
+  },
+  {
+    "id": "prod_10",
+    "name": "Parisienne Crescent Bag",
+    "slug": "parisienne-crescent-bag",
+    "description": "Smooth sculptured crescent silhouette designed to tuck neatly under the arm. Clean French edge painting and minimalist branding for the understated minimalist.",
+    "price": 320,
+    "compareAtPrice": 360,
+    "categoryId": "cat_handbags",
+    "stock": 7,
+    "images": [
+      "/images/products/handbags/parisienne-crescent-bag.jpg",
+      "/images/products/handbags/structured-top-handle-bag.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Bestseller",
+      "Chic"
+    ],
+    "sku": "HB-CRS-010",
+    "createdAt": "2026-02-10T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 27,
+    "materials": "Smooth calfskin, tonal bonded microfiber lining, hidden magnet closure",
+    "dimensions": "11.0\" W x 7.0\" H x 2.8\" D"
+  },
+  {
+    "id": "prod_11",
+    "name": "Heritage Commuter Backpack",
+    "slug": "heritage-commuter-backpack",
+    "description": "Sophisticated weather-resistant ballistic nylon trimmed with full-grain leather. Dedicated padded compartment accommodates up to 16-inch laptops with ergonomic air-mesh back support.",
+    "price": 265,
+    "compareAtPrice": 295,
+    "categoryId": "cat_backpacks",
+    "stock": 19,
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Tech Ready",
+      "Commute"
+    ],
+    "sku": "BP-HRT-011",
+    "createdAt": "2026-02-12T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 45,
+    "materials": "Water-resistant Cordura nylon, vegetable-tanned leather trim, waterproof zips",
+    "dimensions": "12.0\" W x 17.5\" H x 6.0\" D"
+  },
+  {
+    "id": "prod_12",
+    "name": "Architectural Envelope Clutch",
+    "slug": "architectural-envelope-clutch",
+    "description": "Sharp geometric silhouette with an asymmetrical flap closure and concealed magnetic hold. Can be carried in palm or with the removable delicate wristlet strap.",
+    "price": 195,
+    "categoryId": "cat_clutches",
+    "stock": 14,
+    "images": [
+      "/images/products/handbags/monogram-clutch-wallet.jpg",
+      "/images/products/handbags/quilted-evening-shoulder-bag.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Cocktail",
+      "Minimalist"
+    ],
+    "sku": "CL-ENV-012",
+    "createdAt": "2026-02-14T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 18,
+    "materials": "Rigid box calf leather, faille lining, 6 interior card slots",
+    "dimensions": "10.0\" W x 5.0\" H x 1.5\" D"
+  },
+  {
+    "id": "prod_13",
+    "name": "Slim Bifold Leather Wallet",
+    "slug": "slim-bifold-leather-wallet",
+    "description": "Precision-skived micro-calf leather engineered to maintain an ultra-slim pocket profile without sacrificing 8 card slots, billfold divider, and RFID-blocking shielding.",
+    "price": 125,
+    "categoryId": "cat_wallets",
+    "stock": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Everyday",
+      "RFID Protected"
+    ],
+    "sku": "WL-BFD-013",
+    "createdAt": "2026-02-15T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 58,
+    "materials": "French Chèvre goatskin leather, RFID blocking lining, turned edges",
+    "dimensions": "4.3\" W x 3.3\" H x 0.4\" D"
+  },
+  {
+    "id": "prod_cat_01",
+    "name": "Premium Grey Duffel Bag",
+    "slug": "premium-grey-duffel-bag",
+    "description": "A clean, contemporary travel and gym duffel in an elegant grey finish. Long carry handles, an adjustable shoulder strap and a convenient side zip compartment make it suitable for everyday travel, fitness and short trips. Features: Modern cylindrical silhouette, Dual hand-carry handles, Adjustable shoulder strap, Side zip pocket for quick-access essentials, Premium metal-tone hardware.",
+    "price": 195,
+    "compareAtPrice": 240,
+    "categoryId": "cat_travel_duffels",
+    "stock": 18,
+    "images": [
+      "/images/products/handbags/premium-grey-duffel-bag.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-DFL-01",
+    "createdAt": "2026-02-01T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 18,
+    "materials": "Durable textured canvas-nylon weave with antique metal-tone hardware",
+    "dimensions": "19.5\" L x 10.0\" D x 10.0\" H (Capacity: 32L)"
+  },
+  {
+    "id": "prod_cat_02",
+    "name": "Classic Tan Vegan Leather Duffel",
+    "slug": "classic-tan-vegan-leather-duffel",
+    "description": "A premium cylindrical duffel with a rich tan leather-look finish and elegant antique-tone hardware. The structured profile and side pocket give it a refined travel-ready appearance. Features: Premium vegan leather look, Spacious main zip compartment, Adjustable shoulder carry, Side zip utility pocket, Classic cylindrical shape, Suitable for travel, gym and gifting.",
+    "price": 245,
+    "compareAtPrice": 295,
+    "categoryId": "cat_travel_duffels",
+    "stock": 14,
+    "images": [
+      "/images/products/handbags/classic-tan-vegan-leather-duffel.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-DFL-02",
+    "createdAt": "2026-02-02T10:00:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 21,
+    "materials": "Full-grain texture vegan leather, reinforced bonded handles, antiqued brass zips",
+    "dimensions": "20.0\" L x 10.5\" D x 10.5\" H (Capacity: 35L)"
+  },
+  {
+    "id": "prod_cat_03",
+    "name": "Two-Tone Premium Travel Bag",
+    "slug": "two-tone-premium-travel-bag",
+    "description": "A sophisticated brown and deep-green travel bag combining a structured shape with multiple zip sections. Designed for users who prefer a polished, premium look with practical organization. Features: Two-tone premium finish, Large main compartment, Front zip organizer section, Strong twin carry handles, Metal-tone branding and pullers, Ideal for travel and executive use.",
+    "price": 225,
+    "compareAtPrice": 270,
+    "categoryId": "cat_travel_duffels",
+    "stock": 12,
+    "images": [
+      "/images/products/handbags/two-tone-premium-travel-bag.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-TRV-03",
+    "createdAt": "2026-02-03T10:00:00.000Z",
+    "rating": 5,
+    "reviewCount": 24,
+    "materials": "Two-tone heavy-denier coated fabric with saddle tan accents",
+    "dimensions": "21.0\" L x 11.0\" D x 11.5\" H (Capacity: 38L)"
+  },
+  {
+    "id": "prod_cat_04",
+    "name": "Pink Cylindrical Gym Duffel",
+    "slug": "pink-cylindrical-gym-duffel",
+    "description": "A vibrant pink cylindrical duffel with contrasting black trims. Lightweight-looking, sporty and eye-catching, it is well suited for gym, sports, casual travel and youth-focused collections. Features: Textured fabric appearance, Adjustable shoulder strap, Main top zip opening, Side zip pocket, Contrast black piping, Sporty everyday design.",
+    "price": 145,
+    "compareAtPrice": 175,
+    "categoryId": "cat_travel_duffels",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/pink-cylindrical-gym-duffel.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-DFL-04",
+    "createdAt": "2026-02-04T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 27,
+    "materials": "Water-resistant textured micro-poly with black contrast webbing",
+    "dimensions": "18.0\" L x 9.5\" D x 9.5\" H (Capacity: 28L)"
+  },
+  {
+    "id": "prod_cat_05",
+    "name": "Orange Cylindrical Gym Duffel",
+    "slug": "orange-cylindrical-gym-duffel",
+    "description": "A bright orange sports duffel designed to stand out. Its cylindrical body, adjustable webbing strap and side compartment create a simple, functional format for fitness and short-distance travel. Features: Bold orange textured finish, Adjustable shoulder strap, Main zip compartment, Side utility pocket, Contrast black trims, Ideal for gym, sports and casual travel.",
+    "price": 145,
+    "compareAtPrice": 175,
+    "categoryId": "cat_travel_duffels",
+    "stock": 19,
+    "images": [
+      "/images/products/handbags/orange-cylindrical-gym-duffel.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-DFL-05",
+    "createdAt": "2026-02-05T10:00:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 30,
+    "materials": "High-visibility abrasion-resistant textured poly with matte black hardware",
+    "dimensions": "18.0\" L x 9.5\" D x 9.5\" H (Capacity: 28L)"
+  },
+  {
+    "id": "prod_cat_06",
+    "name": "Pastel Green Cylindrical Duffel",
+    "slug": "pastel-green-cylindrical-duffel",
+    "description": "A subtle pastel-green cylindrical duffel with a clean, modern finish. Its compact travel-friendly profile makes it suitable for gym sessions, day trips and lightweight packing. Features: Soft pastel-green finish, Adjustable webbing shoulder strap, Top zip access, Side zip compartment, Contrast black piping, Compact and versatile format.",
+    "price": 160,
+    "compareAtPrice": 190,
+    "categoryId": "cat_travel_duffels",
+    "stock": 16,
+    "images": [
+      "/images/products/handbags/pastel-green-cylindrical-duffel.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-DFL-06",
+    "createdAt": "2026-02-06T10:00:00.000Z",
+    "rating": 5,
+    "reviewCount": 33,
+    "materials": "Soft matte pastel poly weave, heavy-duty zipper pulls",
+    "dimensions": "18.5\" L x 9.5\" D x 9.5\" H (Capacity: 29L)"
+  },
+  {
+    "id": "prod_cat_07",
+    "name": "Pastel Sage Cylindrical Weekender",
+    "slug": "pastel-sage-cylindrical-weekender",
+    "description": "An alternate presentation of the pastel Wild Adventure cylindrical duffel, highlighting its balanced proportions, textured surface and practical side-access pocket. Features: Textured premium appearance, Adjustable shoulder carry, Easy-access top zipper, Round side zip pocket, Clean unisex styling, Useful for gym and short trips.",
+    "price": 165,
+    "compareAtPrice": null,
+    "categoryId": "cat_travel_duffels",
+    "stock": 15,
+    "images": [
+      "/images/products/handbags/pastel-sage-cylindrical-weekender.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-DFL-07",
+    "createdAt": "2026-02-07T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 36,
+    "materials": "Premium matte sage fabric, reinforced load-bearing stress points",
+    "dimensions": "18.5\" L x 9.5\" D x 9.5\" H (Capacity: 29L)"
+  },
+  {
+    "id": "prod_cat_08",
+    "name": "Floral Premium Travel Duffel",
+    "slug": "floral-premium-travel-duffel",
+    "description": "A spacious floral-print travel bag with multiple compartments and both hand and shoulder carrying options. The print gives it a distinctive lifestyle look while the compartment layout supports organized packing. Features: All-over floral print, Large main compartment, Front zip storage, Side compartment, Twin carry handles, Detachable/adjustable shoulder strap.",
+    "price": 210,
+    "compareAtPrice": 250,
+    "categoryId": "cat_travel_duffels",
+    "stock": 11,
+    "images": [
+      "/images/products/handbags/floral-premium-travel-duffel.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-TRV-08",
+    "createdAt": "2026-02-08T10:00:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 39,
+    "materials": "Sublimation-printed high-tensile fabric, woven handles, brushed metal hardware",
+    "dimensions": "20.5\" L x 10.5\" D x 11.0\" H (Capacity: 36L)"
+  },
+  {
+    "id": "prod_cat_09",
+    "name": "Grey Cylindrical Duffel with Striped Webbing",
+    "slug": "grey-cylindrical-duffel-with-striped-webbing",
+    "description": "A smart grey cylindrical duffel with striped shoulder webbing and contrasting light piping. Its neutral palette and clean profile suit both casual and professional travel settings. Features: Neutral grey textured finish, Striped adjustable shoulder strap, Top zip opening, Side zip pocket, Contrast light piping, Unisex travel and gym styling.",
+    "price": 175,
+    "compareAtPrice": 210,
+    "categoryId": "cat_travel_duffels",
+    "stock": 20,
+    "images": [
+      "/images/products/handbags/grey-cylindrical-duffel-with-striped-webbing.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-DFL-09",
+    "createdAt": "2026-02-09T10:00:00.000Z",
+    "rating": 5,
+    "reviewCount": 42,
+    "materials": "Heathered charcoal poly, bespoke jacquard striped webbing",
+    "dimensions": "19.0\" L x 10.0\" D x 10.0\" H (Capacity: 30L)"
+  },
+  {
+    "id": "prod_cat_10",
+    "name": "Multi-Compartment Sports & Travel Bag",
+    "slug": "multi-compartment-sports-travel-bag",
+    "description": "A feature-rich sports and travel bag with a structured rectangular profile, multiple front sections and a side mesh pocket. The contrast accent panels add a dynamic athletic character. Features: Multiple zip compartments, Large main storage section, Front organizer pockets, Side mesh utility pocket, Twin carry handles, Contrast accent detailing.",
+    "price": 185,
+    "compareAtPrice": 220,
+    "categoryId": "cat_travel_duffels",
+    "stock": 25,
+    "images": [
+      "/images/products/handbags/multi-compartment-sports-travel-bag.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Travel",
+      "Duffel",
+      "Wild Adventure",
+      "New In"
+    ],
+    "sku": "WA-TRV-10",
+    "createdAt": "2026-02-010T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 45,
+    "materials": "Structured ripstop polyester, high-density mesh, molded comfort handle",
+    "dimensions": "21.5\" L x 11.5\" D x 12.0\" H (Capacity: 40L)"
+  },
+  {
+    "id": "prod_hr_01",
+    "name": "Half Round Bag - Black + Red Signature",
+    "slug": "half-round-bag-black-red-signature",
+    "description": "Wild Adventure Half Round Travel Bag in Bold black body with vivid red branding panel. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 135,
+    "compareAtPrice": 170,
+    "categoryId": "cat_travel_duffels",
+    "stock": 30,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-black-red-signature.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-01",
+    "createdAt": "2026-02-10T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 14,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_02",
+    "name": "Half Round Bag - Navy + Red Side Accent",
+    "slug": "half-round-bag-navy-red-side-accent",
+    "description": "Wild Adventure Half Round Travel Bag in Deep navy base with sharp red side panel. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 135,
+    "compareAtPrice": 170,
+    "categoryId": "cat_travel_duffels",
+    "stock": 25,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-navy-red-side-accent.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-02",
+    "createdAt": "2026-02-11T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 16,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_03",
+    "name": "Half Round Bag - Red + Navy Diagonal",
+    "slug": "half-round-bag-red-navy-diagonal",
+    "description": "Wild Adventure Half Round Travel Bag in Dynamic diagonal red-and-navy composition. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 140,
+    "compareAtPrice": 175,
+    "categoryId": "cat_travel_duffels",
+    "stock": 20,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-red-navy-diagonal.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-03",
+    "createdAt": "2026-02-12T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 18,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_04",
+    "name": "Half Round Bag - Black + Red Classic",
+    "slug": "half-round-bag-black-red-classic",
+    "description": "Wild Adventure Half Round Travel Bag in Classic black-and-red combination for retail schemes. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 135,
+    "compareAtPrice": 170,
+    "categoryId": "cat_travel_duffels",
+    "stock": 28,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-black-red-classic.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-04",
+    "createdAt": "2026-02-13T10:00:00.000Z",
+    "rating": 5,
+    "reviewCount": 20,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_05",
+    "name": "Half Round Bag - Navy + Red Centre Panel",
+    "slug": "half-round-bag-navy-red-centre-panel",
+    "description": "Wild Adventure Half Round Travel Bag in Balanced navy body with central red logo panel. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 135,
+    "compareAtPrice": 170,
+    "categoryId": "cat_travel_duffels",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-navy-red-centre-panel.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-05",
+    "createdAt": "2026-02-14T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 22,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_06",
+    "name": "Half Round Bag - Navy + Red Symmetrical Block",
+    "slug": "half-round-bag-navy-red-symmetrical-block",
+    "description": "Wild Adventure Half Round Travel Bag in Symmetrical colour-block style with focused branding zone. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 135,
+    "compareAtPrice": 170,
+    "categoryId": "cat_travel_duffels",
+    "stock": 18,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-navy-red-symmetrical-block.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-06",
+    "createdAt": "2026-02-15T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 24,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_07",
+    "name": "Half Round Bag - Black + Red Premium Executive",
+    "slug": "half-round-bag-black-red-premium-executive",
+    "description": "Wild Adventure Half Round Travel Bag in Premium black base with rich red side section. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 145,
+    "compareAtPrice": 180,
+    "categoryId": "cat_travel_duffels",
+    "stock": 15,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-black-red-premium-executive.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-07",
+    "createdAt": "2026-02-16T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 26,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_08",
+    "name": "Half Round Bag - Navy + Red Top Accent",
+    "slug": "half-round-bag-navy-red-top-accent",
+    "description": "Wild Adventure Half Round Travel Bag in Large navy face with red top band. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 135,
+    "compareAtPrice": 170,
+    "categoryId": "cat_travel_duffels",
+    "stock": 24,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-navy-red-top-accent.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-08",
+    "createdAt": "2026-02-17T10:00:00.000Z",
+    "rating": 5,
+    "reviewCount": 28,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_09",
+    "name": "Half Round Bag - Olive + Brown Earth Tone",
+    "slug": "half-round-bag-olive-brown-earth-tone",
+    "description": "Wild Adventure Half Round Travel Bag in Olive and brown combination - earthy, mature and distinctive. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 150,
+    "compareAtPrice": 185,
+    "categoryId": "cat_travel_duffels",
+    "stock": 14,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-olive-brown-earth-tone.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-09",
+    "createdAt": "2026-02-18T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 30,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_hr_10",
+    "name": "Half Round Bag - Grey + Orange Sport",
+    "slug": "half-round-bag-grey-orange-sport",
+    "description": "Wild Adventure Half Round Travel Bag in Modern grey with bright energetic orange accents. Matt-fabric construction, smart colour blocking, and practical travel format suitable for weekend escapes and everyday journeys.",
+    "price": 140,
+    "compareAtPrice": 175,
+    "categoryId": "cat_travel_duffels",
+    "stock": 19,
+    "images": [
+      "/images/products/handbags/half-round-half-round-bag-grey-orange-sport.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Half Round",
+      "Travel Bag",
+      "Matt Fabric",
+      "Colour Block"
+    ],
+    "sku": "WA-HR-10",
+    "createdAt": "2026-02-10T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 32,
+    "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
+    "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
+  },
+  {
+    "id": "prod_lb_01",
+    "name": "LB-01 Midnight Quilted Lunch Tote",
+    "slug": "lb-01-midnight-quilted",
+    "description": "Diamond-quilted monochrome look with a refined metallic Wild Adventure badge. Colour palette: Black. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 65,
+    "compareAtPrice": 80,
+    "categoryId": "cat_lunch_bags",
+    "stock": 16,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-01-midnight-quilted.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Lunch Bag",
+      "LB-01",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-01",
+    "createdAt": "2026-02-20T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 12,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_02",
+    "name": "LB-02 Mint Blossom Lunch Tote",
+    "slug": "lb-02-mint-blossom",
+    "description": "Soft floral-texture print with light blue handles and a premium shield badge. Colour palette: Powder blue / multicolour. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 55,
+    "compareAtPrice": 70,
+    "categoryId": "cat_lunch_bags",
+    "stock": 19,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-02-mint-blossom.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-02",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-02",
+    "createdAt": "2026-02-20T10:01:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 13,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_03",
+    "name": "LB-03 Lavender Bloom Lunch Tote",
+    "slug": "lb-03-lavender-bloom",
+    "description": "Pastel lavender base with artistic floral texture and rich purple handles. Colour palette: Lavender / multicolour. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 55,
+    "compareAtPrice": 70,
+    "categoryId": "cat_lunch_bags",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-03-lavender-bloom.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-03",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-03",
+    "createdAt": "2026-02-20T10:02:00.000Z",
+    "rating": 5,
+    "reviewCount": 14,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_04",
+    "name": "LB-04 Pastel Girl Lunch Tote",
+    "slug": "lb-04-pastel-girl",
+    "description": "Playful pastel checks with character artwork and chevron-pattern handles. Colour palette: Pastel checks / pink. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 50,
+    "compareAtPrice": 65,
+    "categoryId": "cat_lunch_bags",
+    "stock": 25,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-04-pastel-girl.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-04",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-04",
+    "createdAt": "2026-02-20T10:03:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 15,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_05",
+    "name": "LB-05 Blue Gingham Classic Lunch Tote",
+    "slug": "lb-05-blue-gingham-classic",
+    "description": "Crisp gingham checks with black handles and a clean structured silhouette. Colour palette: Royal blue / white. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 52,
+    "compareAtPrice": 67,
+    "categoryId": "cat_lunch_bags",
+    "stock": 28,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-05-blue-gingham-classic.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-05",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-05",
+    "createdAt": "2026-02-20T10:04:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 16,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_06",
+    "name": "LB-06 Lavender Plaid Pocket Lunch Tote",
+    "slug": "lb-06-lavender-plaid-pocket",
+    "description": "Contrast black upper with a checked front pocket and lavender piping. Colour palette: Black / lavender plaid. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 58,
+    "compareAtPrice": 73,
+    "categoryId": "cat_lunch_bags",
+    "stock": 31,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-06-lavender-plaid-pocket.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-06",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-06",
+    "createdAt": "2026-02-20T10:05:00.000Z",
+    "rating": 5,
+    "reviewCount": 17,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_07",
+    "name": "LB-07 Natural Jute Look Lunch Tote",
+    "slug": "lb-07-natural-jute-look",
+    "description": "Warm natural woven texture paired with deep navy handles and trim. Colour palette: Tan / navy. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 68,
+    "compareAtPrice": 83,
+    "categoryId": "cat_lunch_bags",
+    "stock": 34,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-07-natural-jute-look.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Lunch Bag",
+      "LB-07",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-07",
+    "createdAt": "2026-02-20T10:06:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 18,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_08",
+    "name": "LB-08 Heritage Brown Check Lunch Tote",
+    "slug": "lb-08-heritage-brown-check",
+    "description": "Classic woven check pattern with bright red handles for a bold contrast. Colour palette: Brown / red. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 54,
+    "compareAtPrice": 69,
+    "categoryId": "cat_lunch_bags",
+    "stock": 16,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-08-heritage-brown-check.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-08",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-08",
+    "createdAt": "2026-02-20T10:07:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 19,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_09",
+    "name": "LB-09 Olive Duo Lunch Tote",
+    "slug": "lb-09-olive-duo",
+    "description": "Two-tone green front panel with black body, handles and side pocket. Colour palette: Lime / olive / black. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 56,
+    "compareAtPrice": 71,
+    "categoryId": "cat_lunch_bags",
+    "stock": 19,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-09-olive-duo.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-09",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-09",
+    "createdAt": "2026-02-20T10:08:00.000Z",
+    "rating": 5,
+    "reviewCount": 20,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_10",
+    "name": "LB-10 Space Explorer Lunch Tote",
+    "slug": "lb-10-space-explorer",
+    "description": "Kids space theme with astronaut artwork, orange trim and graphic handles. Colour palette: Navy / orange. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 48,
+    "compareAtPrice": 63,
+    "categoryId": "cat_lunch_bags",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-10-space-explorer.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-10",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-10",
+    "createdAt": "2026-02-20T10:09:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 21,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_11",
+    "name": "LB-11 Urban Black Lunch Tote",
+    "slug": "lb-11-urban-black",
+    "description": "Minimal all-black lunch bag with structured front panel and shield badge. Colour palette: Black. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 62,
+    "compareAtPrice": 77,
+    "categoryId": "cat_lunch_bags",
+    "stock": 25,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-11-urban-black.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Lunch Bag",
+      "LB-11",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-11",
+    "createdAt": "2026-02-20T10:10:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 22,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_12",
+    "name": "LB-12 Lilac Minimal Lunch Tote",
+    "slug": "lb-12-lilac-minimal",
+    "description": "Elegant solid lilac body with blush handles and subtle metallic WA detail. Colour palette: Lilac / blush. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 58,
+    "compareAtPrice": 73,
+    "categoryId": "cat_lunch_bags",
+    "stock": 28,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-12-lilac-minimal.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-12",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-12",
+    "createdAt": "2026-02-20T10:11:00.000Z",
+    "rating": 5,
+    "reviewCount": 23,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_13",
+    "name": "LB-13 Ivory Diamond Lunch Tote",
+    "slug": "lb-13-ivory-diamond",
+    "description": "Textured diamond pattern with grey handles and understated WA branding. Colour palette: Cream / grey. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 64,
+    "compareAtPrice": 79,
+    "categoryId": "cat_lunch_bags",
+    "stock": 31,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-13-ivory-diamond.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-13",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-13",
+    "createdAt": "2026-02-20T10:12:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 24,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_14",
+    "name": "LB-14 Run Time Lunch Tote",
+    "slug": "lb-14-run-time",
+    "description": "Energetic kids artwork with a bright yellow front and sporty grey body. Colour palette: Yellow / red / grey. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 48,
+    "compareAtPrice": 63,
+    "categoryId": "cat_lunch_bags",
+    "stock": 34,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-14-run-time.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-14",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-14",
+    "createdAt": "2026-02-20T10:13:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 25,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_15",
+    "name": "LB-15 Dino DJ Lunch Tote",
+    "slug": "lb-15-dino-dj",
+    "description": "Vibrant dinosaur-and-music print pocket with pink body and striped handles. Colour palette: Hot pink / multicolour. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 50,
+    "compareAtPrice": 65,
+    "categoryId": "cat_lunch_bags",
+    "stock": 16,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-15-dino-dj.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-15",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-15",
+    "createdAt": "2026-02-20T10:14:00.000Z",
+    "rating": 5,
+    "reviewCount": 26,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_16",
+    "name": "LB-16 Rose Minimal Lunch Tote",
+    "slug": "lb-16-rose-minimal",
+    "description": "Sophisticated textured rose body with tonal handles and subtle metal branding. Colour palette: Dusty rose / pink. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 60,
+    "compareAtPrice": 75,
+    "categoryId": "cat_lunch_bags",
+    "stock": 19,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-16-rose-minimal.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Lunch Bag",
+      "LB-16",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-16",
+    "createdAt": "2026-02-20T10:15:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 27,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_17",
+    "name": "LB-17 Aqua Box Lunch Tote",
+    "slug": "lb-17-aqua-box",
+    "description": "Clean boxy silhouette with tonal blue webbing and a centered shield badge. Colour palette: Aqua / sky blue. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 54,
+    "compareAtPrice": 69,
+    "categoryId": "cat_lunch_bags",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-17-aqua-box.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-17",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-17",
+    "createdAt": "2026-02-20T10:16:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 28,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_18",
+    "name": "LB-18 Lime Essential Lunch Tote",
+    "slug": "lb-18-lime-essential",
+    "description": "Bright lime body with black handles and compact Wild Adventure badge. Colour palette: Lime / black. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 52,
+    "compareAtPrice": 67,
+    "categoryId": "cat_lunch_bags",
+    "stock": 25,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-18-lime-essential.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-18",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-18",
+    "createdAt": "2026-02-20T10:17:00.000Z",
+    "rating": 5,
+    "reviewCount": 29,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_19",
+    "name": "LB-19 Electric Blue Lunch Tote",
+    "slug": "lb-19-electric-blue",
+    "description": "Strong solid blue body with striped blue-white handles and WA metal detail. Colour palette: Bright blue / white. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 55,
+    "compareAtPrice": 70,
+    "categoryId": "cat_lunch_bags",
+    "stock": 28,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-19-electric-blue.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-19",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-19",
+    "createdAt": "2026-02-20T10:18:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 30,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_20",
+    "name": "LB-20 Cream Diamond Lunch Tote",
+    "slug": "lb-20-cream-diamond",
+    "description": "Soft cream textured diamond design with grey handles and WA zipper pull. Colour palette: Cream / grey. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 64,
+    "compareAtPrice": 79,
+    "categoryId": "cat_lunch_bags",
+    "stock": 31,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-20-cream-diamond.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-20",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-20",
+    "createdAt": "2026-02-20T10:19:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 31,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_21",
+    "name": "LB-21 Metro Plaid Lunch Tote",
+    "slug": "lb-21-metro-plaid",
+    "description": "Large-scale black plaid accented by grey, white and red lines. Colour palette: Black / grey / red. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 58,
+    "compareAtPrice": 73,
+    "categoryId": "cat_lunch_bags",
+    "stock": 34,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-21-metro-plaid.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-21",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-21",
+    "createdAt": "2026-02-20T10:20:00.000Z",
+    "rating": 5,
+    "reviewCount": 32,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_22",
+    "name": "LB-22 Blue Check Square Lunch Tote",
+    "slug": "lb-22-blue-check-square",
+    "description": "Fresh blue-and-cream check pattern with deep blue handles and shield badge. Colour palette: Blue / cream. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 56,
+    "compareAtPrice": 71,
+    "categoryId": "cat_lunch_bags",
+    "stock": 16,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-22-blue-check-square.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-22",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-22",
+    "createdAt": "2026-02-20T10:21:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 33,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_23",
+    "name": "LB-23 Coconut Grey Lunch Tote",
+    "slug": "lb-23-coconut-grey",
+    "description": "Contemporary grey body with tropical coconut graphic and black handles. Colour palette: Charcoal grey / black. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 52,
+    "compareAtPrice": 67,
+    "categoryId": "cat_lunch_bags",
+    "stock": 19,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-23-coconut-grey.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-23",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-23",
+    "createdAt": "2026-02-20T10:22:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 34,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_24",
+    "name": "LB-24 Executive Grey Lunch Tote",
+    "slug": "lb-24-executive-grey",
+    "description": "Minimal grey fabric with white piping and subtle Wild Adventure branding. Colour palette: Grey / white. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 60,
+    "compareAtPrice": 75,
+    "categoryId": "cat_lunch_bags",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-24-executive-grey.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-24",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-24",
+    "createdAt": "2026-02-20T10:23:00.000Z",
+    "rating": 5,
+    "reviewCount": 35,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_25",
+    "name": "LB-25 Happy Yellow Lunch Tote",
+    "slug": "lb-25-happy-yellow",
+    "description": "Cheerful yellow kids print with elephants, stars and matching yellow handles. Colour palette: Yellow / multicolour. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 48,
+    "compareAtPrice": 63,
+    "categoryId": "cat_lunch_bags",
+    "stock": 25,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-25-happy-yellow.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-25",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-25",
+    "createdAt": "2026-02-20T10:24:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 36,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_26",
+    "name": "LB-26 Sky Check Lunch Tote",
+    "slug": "lb-26-sky-check",
+    "description": "Soft blue woven check texture with matching light-blue handles and badge details. Colour palette: Sky blue / white. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 56,
+    "compareAtPrice": 71,
+    "categoryId": "cat_lunch_bags",
+    "stock": 28,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-26-sky-check.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-26",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-26",
+    "createdAt": "2026-02-20T10:25:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 37,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_27",
+    "name": "LB-27 Tribal Stripe Lunch Tote",
+    "slug": "lb-27-tribal-stripe",
+    "description": "Statement geometric stripe pattern with black handles and central WA emblem. Colour palette: Cream / black / red. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 62,
+    "compareAtPrice": 77,
+    "categoryId": "cat_lunch_bags",
+    "stock": 31,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-27-tribal-stripe.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-27",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-27",
+    "createdAt": "2026-02-20T10:26:00.000Z",
+    "rating": 5,
+    "reviewCount": 38,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_28",
+    "name": "LB-28 Utility Grey Lunch Tote",
+    "slug": "lb-28-utility-grey",
+    "description": "Practical structured grey design with contrast webbing and front utility pocket. Colour palette: Grey / silver. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 58,
+    "compareAtPrice": 73,
+    "categoryId": "cat_lunch_bags",
+    "stock": 34,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-28-utility-grey.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-28",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-28",
+    "createdAt": "2026-02-20T10:27:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 39,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_29",
+    "name": "LB-29 Classic Brown Lunch Tote",
+    "slug": "lb-29-classic-brown",
+    "description": "Clean corporate-style brown lunch tote with tonal handles and gold-tone branding. Colour palette: Chocolate brown. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 66,
+    "compareAtPrice": 81,
+    "categoryId": "cat_lunch_bags",
+    "stock": 16,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-29-classic-brown.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Lunch Bag",
+      "LB-29",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-29",
+    "createdAt": "2026-02-20T10:28:00.000Z",
+    "rating": 4.8999999999999995,
+    "reviewCount": 40,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_lb_30",
+    "name": "LB-30 Colour Pop Dots Lunch Tote",
+    "slug": "lb-30-colour-pop-dots",
+    "description": "Fun black base with vivid multicolour dots and black handles. Colour palette: Black / multicolour dots. Insulated thermal lining preserves temperature while the structured silhouette maintains its form on executive desks and daily commutes.",
+    "price": 52,
+    "compareAtPrice": 67,
+    "categoryId": "cat_lunch_bags",
+    "stock": 19,
+    "images": [
+      "/images/products/handbags/lunch-bag-lb-30-colour-pop-dots.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Lunch Bag",
+      "LB-30",
+      "Insulated",
+      "Designer Print"
+    ],
+    "sku": "LB-30",
+    "createdAt": "2026-02-20T10:29:00.000Z",
+    "rating": 5,
+    "reviewCount": 41,
+    "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
+    "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
+  },
+  {
+    "id": "prod_diwali_01",
+    "name": "Diwali 2026 Festive Travel Bag - Style 01",
+    "slug": "diwali-festive-travel-bag-style-01",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 01. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 175,
+    "compareAtPrice": 215,
+    "categoryId": "cat_festive_collection",
+    "stock": 10,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-01.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-01",
+    "createdAt": "2026-03-01T12:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 15,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_02",
+    "name": "Diwali 2026 Festive Travel Bag - Style 02",
+    "slug": "diwali-festive-travel-bag-style-02",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 02. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 195,
+    "compareAtPrice": 235,
+    "categoryId": "cat_festive_collection",
+    "stock": 14,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-02.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-02",
+    "createdAt": "2026-03-01T12:01:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 16,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_03",
+    "name": "Diwali 2026 Festive Travel Bag - Style 03",
+    "slug": "diwali-festive-travel-bag-style-03",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 03. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 215,
+    "compareAtPrice": 255,
+    "categoryId": "cat_festive_collection",
+    "stock": 18,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-03.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-03",
+    "createdAt": "2026-03-01T12:02:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 17,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_04",
+    "name": "Diwali 2026 Festive Travel Bag - Style 04",
+    "slug": "diwali-festive-travel-bag-style-04",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 04. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 235,
+    "compareAtPrice": 275,
+    "categoryId": "cat_festive_collection",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-04.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-04",
+    "createdAt": "2026-03-01T12:03:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 18,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_05",
+    "name": "Diwali 2026 Festive Travel Bag - Style 05",
+    "slug": "diwali-festive-travel-bag-style-05",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 05. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 175,
+    "compareAtPrice": 215,
+    "categoryId": "cat_festive_collection",
+    "stock": 26,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-05.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-05",
+    "createdAt": "2026-03-01T12:04:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 19,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_06",
+    "name": "Diwali 2026 Festive Travel Bag - Style 06",
+    "slug": "diwali-festive-travel-bag-style-06",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 06. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 195,
+    "compareAtPrice": 235,
+    "categoryId": "cat_festive_collection",
+    "stock": 10,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-06.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-06",
+    "createdAt": "2026-03-01T12:05:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 20,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_07",
+    "name": "Diwali 2026 Festive Travel Bag - Style 07",
+    "slug": "diwali-festive-travel-bag-style-07",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 07. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 215,
+    "compareAtPrice": 255,
+    "categoryId": "cat_festive_collection",
+    "stock": 14,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-07.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-07",
+    "createdAt": "2026-03-01T12:06:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 21,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_08",
+    "name": "Diwali 2026 Festive Travel Bag - Style 08",
+    "slug": "diwali-festive-travel-bag-style-08",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 08. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 235,
+    "compareAtPrice": 275,
+    "categoryId": "cat_festive_collection",
+    "stock": 18,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-08.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-08",
+    "createdAt": "2026-03-01T12:07:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 22,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_09",
+    "name": "Diwali 2026 Festive Travel Bag - Style 09",
+    "slug": "diwali-festive-travel-bag-style-09",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 09. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 175,
+    "compareAtPrice": 215,
+    "categoryId": "cat_festive_collection",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-09.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-09",
+    "createdAt": "2026-03-01T12:08:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 23,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_10",
+    "name": "Diwali 2026 Festive Travel Bag - Style 10",
+    "slug": "diwali-festive-travel-bag-style-10",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 10. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 195,
+    "compareAtPrice": 235,
+    "categoryId": "cat_festive_collection",
+    "stock": 26,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-10.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-10",
+    "createdAt": "2026-03-01T12:09:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 24,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_11",
+    "name": "Diwali 2026 Festive Travel Bag - Style 11",
+    "slug": "diwali-festive-travel-bag-style-11",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 11. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 215,
+    "compareAtPrice": 255,
+    "categoryId": "cat_festive_collection",
+    "stock": 10,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-11.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-11",
+    "createdAt": "2026-03-01T12:10:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 25,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_12",
+    "name": "Diwali 2026 Festive Travel Bag - Style 12",
+    "slug": "diwali-festive-travel-bag-style-12",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 12. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 235,
+    "compareAtPrice": 275,
+    "categoryId": "cat_festive_collection",
+    "stock": 14,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-12.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-12",
+    "createdAt": "2026-03-01T12:11:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 26,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_13",
+    "name": "Diwali 2026 Festive Travel Bag - Style 13",
+    "slug": "diwali-festive-travel-bag-style-13",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 13. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 175,
+    "compareAtPrice": 215,
+    "categoryId": "cat_festive_collection",
+    "stock": 18,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-13.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-13",
+    "createdAt": "2026-03-01T12:12:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 27,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_14",
+    "name": "Diwali 2026 Festive Travel Bag - Style 14",
+    "slug": "diwali-festive-travel-bag-style-14",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 14. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 195,
+    "compareAtPrice": 235,
+    "categoryId": "cat_festive_collection",
+    "stock": 22,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-14.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-14",
+    "createdAt": "2026-03-01T12:13:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 28,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_15",
+    "name": "Diwali 2026 Festive Travel Bag - Style 15",
+    "slug": "diwali-festive-travel-bag-style-15",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 15. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 215,
+    "compareAtPrice": 255,
+    "categoryId": "cat_festive_collection",
+    "stock": 26,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-15.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-15",
+    "createdAt": "2026-03-01T12:14:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 29,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_16",
+    "name": "Diwali 2026 Festive Travel Bag - Style 16",
+    "slug": "diwali-festive-travel-bag-style-16",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 16. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 235,
+    "compareAtPrice": 275,
+    "categoryId": "cat_festive_collection",
+    "stock": 10,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-16.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-16",
+    "createdAt": "2026-03-01T12:15:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 30,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_17",
+    "name": "Diwali 2026 Festive Travel Bag - Style 17",
+    "slug": "diwali-festive-travel-bag-style-17",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 17. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 175,
+    "compareAtPrice": 215,
+    "categoryId": "cat_festive_collection",
+    "stock": 14,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-17.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-17",
+    "createdAt": "2026-03-01T12:16:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 31,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_diwali_18",
+    "name": "Diwali 2026 Festive Travel Bag - Style 18",
+    "slug": "diwali-festive-travel-bag-style-18",
+    "description": "Curated Wild Adventure Diwali 2026 New Festive Bag Collection - Style 18. Premium cylindrical travel duffle crafted with rich textures, smart accent detailing, and festive-ready presentation.",
+    "price": 195,
+    "compareAtPrice": 235,
+    "categoryId": "cat_festive_collection",
+    "stock": 18,
+    "images": [
+      "/images/products/handbags/diwali-festive-style-18.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Festive 2026",
+      "Diwali Edition",
+      "Travel Duffle",
+      "Gift Ready"
+    ],
+    "sku": "DW-2026-18",
+    "createdAt": "2026-03-01T12:17:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 32,
+    "materials": "Richly textured travel fabric, gold-tone accent zipper, reinforced hand-carry and shoulder straps",
+    "dimensions": "19.5\" L x 10.0\" D x 10.5\" H"
+  },
+  {
+    "id": "prod_rnd_01",
+    "name": "Custom Digital Round Bag - Signature Monogram",
+    "slug": "custom-digital-round-bag-signature-monogram",
+    "description": "The Wild Adventure Custom Digital Round Bag transforms a circular utility silhouette into a striking high-impact visual canvas. Designed for custom promotional printing, skyline graphics, and modern brand presence.",
+    "price": 120,
+    "compareAtPrice": 150,
+    "categoryId": "cat_round_bags",
+    "stock": 35,
+    "images": [
+      "/images/products/handbags/custom-digital-round-bag-signature-monogram.jpg"
+    ],
+    "isFeatured": true,
+    "tags": [
+      "Digital Print",
+      "Round Bag",
+      "Corporate",
+      "Custom"
+    ],
+    "sku": "WA-RND-01",
+    "createdAt": "2026-03-05T09:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 21,
+    "materials": "Full-front high-definition digital print fabric, durable structured circular gusset, nylon webbing strap",
+    "dimensions": "10.5\" Diameter x 4.0\" D"
+  },
+  {
+    "id": "prod_rnd_02",
+    "name": "Custom Digital Round Bag - Skyline Edition",
+    "slug": "custom-digital-round-bag-skyline-edition",
+    "description": "The Wild Adventure Custom Digital Round Bag transforms a circular utility silhouette into a striking high-impact visual canvas. Designed for custom promotional printing, skyline graphics, and modern brand presence.",
+    "price": 130,
+    "compareAtPrice": 160,
+    "categoryId": "cat_round_bags",
+    "stock": 35,
+    "images": [
+      "/images/products/handbags/custom-digital-round-bag-skyline-edition.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Digital Print",
+      "Round Bag",
+      "Corporate",
+      "Custom"
+    ],
+    "sku": "WA-RND-02",
+    "createdAt": "2026-03-05T09:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 21,
+    "materials": "Full-front high-definition digital print fabric, durable structured circular gusset, nylon webbing strap",
+    "dimensions": "10.5\" Diameter x 4.0\" D"
+  },
+  {
+    "id": "prod_rnd_03",
+    "name": "Custom Digital Round Bag - Corporate Campaign",
+    "slug": "custom-digital-round-bag-corporate-campaign",
+    "description": "The Wild Adventure Custom Digital Round Bag transforms a circular utility silhouette into a striking high-impact visual canvas. Designed for custom promotional printing, skyline graphics, and modern brand presence.",
+    "price": 125,
+    "compareAtPrice": 155,
+    "categoryId": "cat_round_bags",
+    "stock": 35,
+    "images": [
+      "/images/products/handbags/custom-digital-round-bag-corporate-campaign.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Digital Print",
+      "Round Bag",
+      "Corporate",
+      "Custom"
+    ],
+    "sku": "WA-RND-03",
+    "createdAt": "2026-03-05T09:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 21,
+    "materials": "Full-front high-definition digital print fabric, durable structured circular gusset, nylon webbing strap",
+    "dimensions": "10.5\" Diameter x 4.0\" D"
+  },
+  {
+    "id": "prod_rnd_04",
+    "name": "Custom Digital Round Bag - Minimal Horizon",
+    "slug": "custom-digital-round-bag-minimal-horizon",
+    "description": "The Wild Adventure Custom Digital Round Bag transforms a circular utility silhouette into a striking high-impact visual canvas. Designed for custom promotional printing, skyline graphics, and modern brand presence.",
+    "price": 120,
+    "compareAtPrice": 150,
+    "categoryId": "cat_round_bags",
+    "stock": 35,
+    "images": [
+      "/images/products/handbags/custom-digital-round-bag-minimal-horizon.jpg"
+    ],
+    "isFeatured": false,
+    "tags": [
+      "Digital Print",
+      "Round Bag",
+      "Corporate",
+      "Custom"
+    ],
+    "sku": "WA-RND-04",
+    "createdAt": "2026-03-05T09:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 21,
+    "materials": "Full-front high-definition digital print fabric, durable structured circular gusset, nylon webbing strap",
+    "dimensions": "10.5\" Diameter x 4.0\" D"
+  }
+];

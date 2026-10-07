@@ -1,0 +1,280 @@
+core_handbags = [
+  {
+    "id": "prod_01",
+    "name": "Classic Leather Tote",
+    "slug": "classic-leather-tote",
+    "description": "An iconic silhouette handcrafted from buttery full-grain calfskin. Features reinforced dual handles, unlined raw suede interior, and a detachable zippered interior pouch for seamless city living.",
+    "price": 345,
+    "compareAtPrice": 420,
+    "categoryId": "cat_handbags",
+    "stock": 24,
+    "images": [
+      "/images/products/handbags/classic-leather-tote.jpg",
+      "/images/products/handbags/soft-nappa-tote.jpg"
+    ],
+    "isFeatured": True,
+    "tags": ["Bestseller", "Full Grain", "Everyday"],
+    "sku": "HB-TOT-001",
+    "createdAt": "2026-01-15T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 38,
+    "materials": "100% Full-grain Tuscan Calf Leather, Solid Brass Hardware with brushed gold finish",
+    "dimensions": "14.5\" W x 11.8\" H x 5.5\" D (Strap drop: 9.5\")"
+  },
+  {
+    "id": "prod_02",
+    "name": "Crossbody Saddle Bag",
+    "slug": "crossbody-saddle-bag",
+    "description": "Inspired by equestrian heritage, this curved saddle bag combines structured architectural contours with a magnetic flap closure and an adjustable wide leather shoulder strap.",
+    "price": 285,
+    "compareAtPrice": 320,
+    "categoryId": "cat_handbags",
+    "stock": 15,
+    "images": [
+      "/images/products/handbags/saddle-crossbody-bag.jpg",
+      "/images/products/handbags/vintage-envelope-satchel.jpg"
+    ],
+    "isFeatured": True,
+    "tags": ["Trending", "Hands-Free", "Classic"],
+    "sku": "HB-SDL-002",
+    "createdAt": "2026-01-16T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 29,
+    "materials": "Vegetable-tanned smooth leather, linen blend lining, custom curved buckle",
+    "dimensions": "9.2\" W x 7.5\" H x 3.2\" D (Strap drop: 19\"–23\")"
+  },
+  {
+    "id": "prod_03",
+    "name": "Quilted Evening Shoulder Bag",
+    "slug": "quilted-evening-shoulder-bag",
+    "description": "Exquisite diamond quilting in ultra-soft lambskin leather, finished with a polished jewelry-grade curb chain strap that easily transitions between shoulder and crossbody carry.",
+    "price": 395,
+    "categoryId": "cat_handbags",
+    "stock": 8,
+    "images": [
+      "/images/products/handbags/quilted-evening-shoulder-bag.jpg",
+      "/images/products/handbags/chain-strap-flap-bag.jpg"
+    ],
+    "isFeatured": True,
+    "tags": ["New", "Luxury", "Evening"],
+    "sku": "HB-QLT-003",
+    "createdAt": "2026-01-18T10:00:00.000Z",
+    "rating": 5.0,
+    "reviewCount": 16,
+    "materials": "Plonge Lambskin, 18k Light Gold Electroplated Metal Alloy Chain, Silk lining",
+    "dimensions": "10.0\" W x 6.2\" H x 2.8\" D"
+  },
+  {
+    "id": "prod_04",
+    "name": "Canvas Everyday Satchel",
+    "slug": "canvas-everyday-satchel",
+    "description": "Heavyweight 24oz organic cotton canvas paired with rich saddle leather trims. Built to carry laptops, journals, and weekend necessities with effortless coastal elegance.",
+    "price": 240,
+    "compareAtPrice": 280,
+    "categoryId": "cat_handbags",
+    "stock": 32,
+    "images": [
+      "/images/products/handbags/canvas-everyday-satchel.jpg",
+      "/images/products/handbags/artisan-leather-duffle-mini.jpg"
+    ],
+    "isFeatured": True,
+    "tags": ["Sustainable", "Workwear", "Durable"],
+    "sku": "HB-STC-004",
+    "createdAt": "2026-01-20T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 42,
+    "materials": "100% Certified Organic Cotton Canvas, Vachetta Leather Trim, Antique Nickel Fasteners",
+    "dimensions": "13.0\" W x 10.5\" H x 4.8\" D"
+  },
+  {
+    "id": "prod_05",
+    "name": "Minimalist Leather Bucket Bag",
+    "slug": "minimalist-leather-bucket-bag",
+    "description": "A cylinder silhouette that stays upright on brass feet. Includes a leather drawstring inner cinch closure and a dual-purpose handheld loop plus crossbody strap.",
+    "price": 310,
+    "categoryId": "cat_handbags",
+    "stock": 5,
+    "images": [
+      "/images/products/handbags/minimalist-leather-bucket-bag.jpg",
+      "/images/products/handbags/sculptural-geometric-bag.jpg"
+    ],
+    "isFeatured": False,
+    "tags": ["Minimalist", "Low Stock"],
+    "sku": "HB-BKT-005",
+    "createdAt": "2026-01-22T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 19,
+    "materials": "Semi-aniline Box Calf, Microfiber suede lining, Cinch leather tie",
+    "dimensions": "8.0\" W x 9.5\" H x 6.0\" D"
+  },
+  {
+    "id": "prod_06",
+    "name": "Structured Top Handle Bag",
+    "slug": "structured-top-handle-bag",
+    "description": "The epitome of executive refinement. Trapezoid structured frame with reinforced gussets, a sleek push-lock closure, and an interior divider with phone and card slots.",
+    "price": 430,
+    "compareAtPrice": 480,
+    "categoryId": "cat_handbags",
+    "stock": 12,
+    "images": [
+      "/images/products/handbags/structured-top-handle-bag.jpg",
+      "/images/products/handbags/parisienne-crescent-bag.jpg"
+    ],
+    "isFeatured": True,
+    "tags": ["Heritage", "Structured", "Statement"],
+    "sku": "HB-TPH-006",
+    "createdAt": "2026-01-25T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 22,
+    "materials": "Pebbled Calf Leather with scratch-resistant coat, Gold-tone twist clasp",
+    "dimensions": "11.5\" W x 8.8\" H x 4.0\" D (Handle drop: 4.0\")"
+  },
+  {
+    "id": "prod_07",
+    "name": "Woven Luxury Hobo Bag",
+    "slug": "woven-luxury-hobo-bag",
+    "description": "Individually hand-braided intrecciato leather strips creating a slouchy, crescent silhouette that moulds effortlessly under the arm. Ultra lightweight yet spacious.",
+    "price": 360,
+    "categoryId": "cat_handbags",
+    "stock": 3,
+    "images": [
+      "/images/products/handbags/woven-luxury-hobo-bag.jpg",
+      "/images/products/handbags/pleated-leather-pouch.jpg"
+    ],
+    "isFeatured": True,
+    "tags": ["Handmade", "Intrecciato", "Low Stock"],
+    "sku": "HB-WVN-007",
+    "createdAt": "2026-01-28T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 31,
+    "materials": "Hand-woven Nappa Leather, Magnetic top snap, Hidden zip pouch",
+    "dimensions": "15.0\" W x 12.0\" H x 3.5\" D"
+  },
+  {
+    "id": "prod_08",
+    "name": "Croc-Embossed Baguette Bag",
+    "slug": "croc-embossed-baguette",
+    "description": "A nostalgic 90s silhouette remastered for the contemporary wardrobe. Glazed croc-embossed calf leather with a sculpted bevelled shoulder strap and slim profile.",
+    "price": 275,
+    "compareAtPrice": 310,
+    "categoryId": "cat_handbags",
+    "stock": 18,
+    "images": [
+      "/images/products/handbags/croc-embossed-baguette.jpg",
+      "/images/products/handbags/monogram-clutch-wallet.jpg"
+    ],
+    "isFeatured": False,
+    "tags": ["Vintage Vibe", "Croc Print"],
+    "sku": "HB-BGT-008",
+    "createdAt": "2026-02-01T10:00:00.000Z",
+    "rating": 4.6,
+    "reviewCount": 14,
+    "materials": "Embossed Cowhide Leather, Cotton twill interior, Silver-finish zip",
+    "dimensions": "10.5\" W x 5.5\" H x 2.2\" D"
+  },
+  {
+    "id": "prod_09",
+    "name": "Artisan Leather Mini Duffle",
+    "slug": "artisan-leather-duffle-mini",
+    "description": "Barrel-style mini duffle crafted in oiled pull-up leather that develops a magnificent patina over time. Includes dual rolled handles and an optional crossbody strap.",
+    "price": 295,
+    "categoryId": "cat_handbags",
+    "stock": 11,
+    "images": [
+      "/images/products/handbags/artisan-leather-duffle-mini.jpg",
+      "/images/products/handbags/classic-leather-tote.jpg"
+    ],
+    "isFeatured": False,
+    "tags": ["Patina", "Travel Ready"],
+    "sku": "HB-DFL-009",
+    "createdAt": "2026-02-05T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 12,
+    "materials": "Pull-up Full-grain Leather, YKK Excella two-way zipper",
+    "dimensions": "9.8\" W x 6.5\" H x 5.0\" D"
+  },
+  {
+    "id": "prod_10",
+    "name": "Parisienne Crescent Bag",
+    "slug": "parisienne-crescent-bag",
+    "description": "Smooth sculptured crescent silhouette designed to tuck neatly under the arm. Clean French edge painting and minimalist branding for the understated minimalist.",
+    "price": 320,
+    "compareAtPrice": 360,
+    "categoryId": "cat_handbags",
+    "stock": 7,
+    "images": [
+      "/images/products/handbags/parisienne-crescent-bag.jpg",
+      "/images/products/handbags/structured-top-handle-bag.jpg"
+    ],
+    "isFeatured": True,
+    "tags": ["Bestseller", "Chic"],
+    "sku": "HB-CRS-010",
+    "createdAt": "2026-02-10T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 27,
+    "materials": "Smooth calfskin, tonal bonded microfiber lining, hidden magnet closure",
+    "dimensions": "11.0\" W x 7.0\" H x 2.8\" D"
+  },
+  {
+    "id": "prod_11",
+    "name": "Heritage Commuter Backpack",
+    "slug": "heritage-commuter-backpack",
+    "description": "Sophisticated weather-resistant ballistic nylon trimmed with full-grain leather. Dedicated padded compartment accommodates up to 16-inch laptops with ergonomic air-mesh back support.",
+    "price": 265,
+    "compareAtPrice": 295,
+    "categoryId": "cat_backpacks",
+    "stock": 19,
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "isFeatured": True,
+    "tags": ["Tech Ready", "Commute"],
+    "sku": "BP-HRT-011",
+    "createdAt": "2026-02-12T10:00:00.000Z",
+    "rating": 4.8,
+    "reviewCount": 45,
+    "materials": "Water-resistant Cordura nylon, vegetable-tanned leather trim, waterproof zips",
+    "dimensions": "12.0\" W x 17.5\" H x 6.0\" D"
+  },
+  {
+    "id": "prod_12",
+    "name": "Architectural Envelope Clutch",
+    "slug": "architectural-envelope-clutch",
+    "description": "Sharp geometric silhouette with an asymmetrical flap closure and concealed magnetic hold. Can be carried in palm or with the removable delicate wristlet strap.",
+    "price": 195,
+    "categoryId": "cat_clutches",
+    "stock": 14,
+    "images": [
+      "/images/products/handbags/monogram-clutch-wallet.jpg",
+      "/images/products/handbags/quilted-evening-shoulder-bag.jpg"
+    ],
+    "isFeatured": False,
+    "tags": ["Cocktail", "Minimalist"],
+    "sku": "CL-ENV-012",
+    "createdAt": "2026-02-14T10:00:00.000Z",
+    "rating": 4.7,
+    "reviewCount": 18,
+    "materials": "Rigid box calf leather, faille lining, 6 interior card slots",
+    "dimensions": "10.0\" W x 5.0\" H x 1.5\" D"
+  },
+  {
+    "id": "prod_13",
+    "name": "Slim Bifold Leather Wallet",
+    "slug": "slim-bifold-leather-wallet",
+    "description": "Precision-skived micro-calf leather engineered to maintain an ultra-slim pocket profile without sacrificing 8 card slots, billfold divider, and RFID-blocking shielding.",
+    "price": 125,
+    "categoryId": "cat_wallets",
+    "stock": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "isFeatured": False,
+    "tags": ["Everyday", "RFID Protected"],
+    "sku": "WL-BFD-013",
+    "createdAt": "2026-02-15T10:00:00.000Z",
+    "rating": 4.9,
+    "reviewCount": 58,
+    "materials": "French Chèvre goatskin leather, RFID blocking lining, turned edges",
+    "dimensions": "4.3\" W x 3.3\" H x 0.4\" D"
+  }
+]
