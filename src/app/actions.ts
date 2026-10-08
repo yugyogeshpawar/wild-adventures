@@ -89,7 +89,9 @@ export async function createProductAction(data: Omit<Product, "id" | "createdAt"
     revalidatePath("/admin/products");
     revalidatePath("/admin/dashboard");
     revalidatePath("/");
-    revalidatePath(`/categories/${product.categoryId}`);
+    if (product.categorySlug) {
+      revalidatePath(`/categories/${product.categorySlug}`);
+    }
     return { success: true, data: product };
   } catch (error: any) {
     return { success: false, error: error.message || "Failed to create product" };
@@ -103,6 +105,7 @@ export async function updateProductAction(id: string, data: Partial<Product>) {
     revalidatePath("/admin/dashboard");
     revalidatePath("/");
     if (updated?.slug) revalidatePath(`/products/${updated.slug}`);
+    if (updated?.categorySlug) revalidatePath(`/categories/${updated.categorySlug}`);
     return { success: true, data: updated };
   } catch (error: any) {
     return { success: false, error: error.message || "Failed to update product" };
@@ -111,10 +114,13 @@ export async function updateProductAction(id: string, data: Partial<Product>) {
 
 export async function deleteProductAction(id: string) {
   try {
+    const existing = await db.getProductById(id);
     const success = await db.deleteProduct(id);
     revalidatePath("/admin/products");
     revalidatePath("/admin/dashboard");
     revalidatePath("/");
+    if (existing?.categorySlug) revalidatePath(`/categories/${existing.categorySlug}`);
+    if (existing?.slug) revalidatePath(`/products/${existing.slug}`);
     return { success };
   } catch (error: any) {
     return { success: false, error: error.message || "Failed to delete product" };

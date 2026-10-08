@@ -26,7 +26,7 @@ export function StorefrontCatalog({
     if (selectedCategory !== "all") {
       const cat = categories.find((c) => c.slug === selectedCategory);
       if (cat) {
-        list = list.filter((p) => p.categoryId === cat.id);
+        list = list.filter((p) => p.categoryId === cat.id || p.categorySlug === cat.slug);
       }
     }
 

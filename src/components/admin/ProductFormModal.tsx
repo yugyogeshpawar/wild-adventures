@@ -107,7 +107,8 @@ export function ProductFormModal({
       setDescription(product.description || "");
       setPrice(product.price);
       setCompareAtPrice(product.compareAtPrice || "");
-      setCategoryId(product.categoryId);
+      const matchedCat = categories.find((c) => c.id === product.categoryId || c.slug === product.categorySlug);
+      setCategoryId(matchedCat ? matchedCat.id : product.categoryId);
       setStock(product.stock);
       setSku(product.sku);
       setMaterials(product.materials || "");

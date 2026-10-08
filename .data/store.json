@@ -146,7 +146,7 @@
       ],
       "sku": "HB-QLT-003",
       "createdAt": "2026-01-18T10:00:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 16,
       "materials": "Plonge Lambskin, 18k Light Gold Electroplated Metal Alloy Chain, Silk lining",
       "dimensions": "10.0\" W x 6.2\" H x 2.8\" D"
@@ -470,7 +470,7 @@
       ],
       "sku": "WA-TRV-03",
       "createdAt": "2026-02-03T10:00:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 24,
       "materials": "Two-tone heavy-denier coated fabric with saddle tan accents",
       "dimensions": "21.0\" L x 11.0\" D x 11.5\" H (Capacity: 38L)"
@@ -548,7 +548,7 @@
       ],
       "sku": "WA-DFL-06",
       "createdAt": "2026-02-06T10:00:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 33,
       "materials": "Soft matte pastel poly weave, heavy-duty zipper pulls",
       "dimensions": "18.5\" L x 9.5\" D x 9.5\" H (Capacity: 29L)"
@@ -626,7 +626,7 @@
       ],
       "sku": "WA-DFL-09",
       "createdAt": "2026-02-09T10:00:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 42,
       "materials": "Heathered charcoal poly, bespoke jacquard striped webbing",
       "dimensions": "19.0\" L x 10.0\" D x 10.0\" H (Capacity: 30L)"
@@ -756,7 +756,7 @@
       ],
       "sku": "WA-HR-04",
       "createdAt": "2026-02-13T10:00:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 20,
       "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
       "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
@@ -860,7 +860,7 @@
       ],
       "sku": "WA-HR-08",
       "createdAt": "2026-02-17T10:00:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 28,
       "materials": "Matt finish bonded polyester fabric, heavy gauge zipper, reinforced dual webbing handles",
       "dimensions": "19.0\" L x 9.0\" W x 11.0\" H (Half-Round Arch Profile)"
@@ -990,7 +990,7 @@
       ],
       "sku": "LB-03",
       "createdAt": "2026-02-20T10:02:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 14,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1068,7 +1068,7 @@
       ],
       "sku": "LB-06",
       "createdAt": "2026-02-20T10:05:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 17,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1146,7 +1146,7 @@
       ],
       "sku": "LB-09",
       "createdAt": "2026-02-20T10:08:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 20,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1224,7 +1224,7 @@
       ],
       "sku": "LB-12",
       "createdAt": "2026-02-20T10:11:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 23,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1302,7 +1302,7 @@
       ],
       "sku": "LB-15",
       "createdAt": "2026-02-20T10:14:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 26,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1380,7 +1380,7 @@
       ],
       "sku": "LB-18",
       "createdAt": "2026-02-20T10:17:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 29,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1458,7 +1458,7 @@
       ],
       "sku": "LB-21",
       "createdAt": "2026-02-20T10:20:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 32,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1536,7 +1536,7 @@
       ],
       "sku": "LB-24",
       "createdAt": "2026-02-20T10:23:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 35,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1614,7 +1614,7 @@
       ],
       "sku": "LB-27",
       "createdAt": "2026-02-20T10:26:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 38,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"
@@ -1692,7 +1692,7 @@
       ],
       "sku": "LB-30",
       "createdAt": "2026-02-20T10:29:00.000Z",
-      "rating": 5,
+      "rating": 5.0,
       "reviewCount": 41,
       "materials": "Water-repellent textured exterior, food-grade wipeable silver thermal foil insulation, reinforced handles",
       "dimensions": "9.5\" W x 8.5\" H x 5.5\" D"

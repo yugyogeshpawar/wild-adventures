@@ -16,6 +16,7 @@ export interface Product {
   price: number;
   compareAtPrice?: number | null;
   categoryId: string;
+  categorySlug?: string;
   stock: number;
   images: string[];
   isFeatured: boolean;
@@ -26,6 +27,7 @@ export interface Product {
   reviewCount?: number | null;
   materials?: string | null;
   dimensions?: string | null;
+  specifications?: Record<string, unknown>;
 }
 
 export interface CartItem {

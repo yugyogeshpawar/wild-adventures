@@ -101,7 +101,7 @@ export function CategoryTableManager({
       {/* Categories Cards / Table */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {categories.map((cat) => {
-          const categoryProducts = products.filter((p) => p.categoryId === cat.id);
+          const categoryProducts = products.filter((p) => p.categoryId === cat.id || p.categorySlug === cat.slug);
           const isHandBag = cat.slug === "hand-bag";
 
           return (

@@ -62,7 +62,9 @@ export function ProductTableManager({
 
       // Category
       const matchesCategory =
-        selectedCategory === "all" || p.categoryId === selectedCategory;
+        selectedCategory === "all" ||
+        p.categoryId === selectedCategory ||
+        p.categorySlug === selectedCategory;
 
       // Stock
       let matchesStock = true;
@@ -194,7 +196,7 @@ export function ProductTableManager({
             </div>
           ) : (
             paginatedProducts.map((product) => {
-              const category = categories.find((c) => c.id === product.categoryId);
+              const category = categories.find((c) => c.id === product.categoryId || c.slug === product.categorySlug);
               const isOutOfStock = product.stock <= 0;
               const isLowStock = product.stock > 0 && product.stock <= 5;
 
@@ -307,7 +309,7 @@ export function ProductTableManager({
                 </tr>
               ) : (
                 paginatedProducts.map((product) => {
-                  const category = categories.find((c) => c.id === product.categoryId);
+                  const category = categories.find((c) => c.id === product.categoryId || c.slug === product.categorySlug);
                   const isOutOfStock = product.stock <= 0;
                   const isLowStock = product.stock > 0 && product.stock <= 5;
 
