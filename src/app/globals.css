@@ -25,15 +25,26 @@
   --radius: 0.5rem;
 }
 
-html,
-body {
+html {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
-  max-width: 100vw;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
   color: var(--foreground);
   background: var(--background);
   font-feature-settings: "rlig" 1, "calt" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 /* Custom subtle scrollbar */

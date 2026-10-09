@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-[#1E1914] text-stone-100 py-20 lg:py-32">
+    <section className="relative overflow-hidden bg-[#1E1914] text-stone-100 py-14 sm:py-20 lg:py-32 w-full max-w-full">
       {/* Subtle background glow/overlay */}
       <div className="absolute inset-0 opacity-40 mix-blend-overlay">
         <Image
@@ -18,8 +18,8 @@ export function HeroSection() {
       </div>
       <div className="absolute inset-0 bg-gradient-to-r from-[#140F0A]/95 via-[#1E1914]/85 to-transparent" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl space-y-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-2xl space-y-5 sm:space-y-6 w-full">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 border border-amber-400/20 text-amber-300 text-xs uppercase tracking-[0.2em] font-medium backdrop-blur-sm">
             <Sparkles className="h-3.5 w-3.5 text-amber-300" />
             <span>Autumn / Winter Handbag Collection</span>

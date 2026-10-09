@@ -83,7 +83,7 @@ export function ProductDetailView({
   }, [isLightboxOpen, images.length]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-14 pb-28 lg:pb-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-14 pb-28 lg:pb-16 w-full max-w-full overflow-hidden">
       {/* Breadcrumb */}
       <nav className="flex items-center space-x-2 text-xs text-stone-500 mb-6 sm:mb-8 font-sans overflow-x-auto no-scrollbar">
         <Link href="/" className="hover:text-stone-900 transition-colors whitespace-nowrap">

@@ -15,14 +15,14 @@ export default async function HomePage() {
   const handbagCategory = categories.find((c) => c.slug === "hand-bag");
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-full max-w-full overflow-x-hidden">
       {/* Hero Banner */}
       <HeroSection />
 
       {/* Brand Value Pillars */}
-      <section className="bg-white border-y border-stone-200/90 py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <section className="bg-white border-y border-stone-200/90 py-8 sm:py-10 w-full overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="flex items-start gap-3.5">
               <div className="p-2.5 bg-stone-100 rounded-full text-stone-800">
                 <Feather className="h-5 w-5" />
@@ -84,10 +84,10 @@ export default async function HomePage() {
 
       {/* Featured Hand Bag Spotlight Banner */}
       {handbagCategory && (
-        <section className="bg-[#2A2219] text-[#F5F2EC] py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-              <div className="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden border border-[#4D3E2F]/60">
+        <section className="bg-[#2A2219] text-[#F5F2EC] py-12 sm:py-16 w-full overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 items-center">
+              <div className="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden border border-[#4D3E2F]/60 w-full">
                 <Image
                   src="/images/products/handbags/classic-leather-tote.jpg"
                   alt="Spotlight Hand Bag"

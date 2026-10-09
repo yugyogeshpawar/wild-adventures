@@ -52,14 +52,14 @@ export function Navbar() {
   return (
     <>
       {/* Top announcement bar */}
-      <div className="bg-[#2A2219] text-[#F5F2EC] text-[10px] sm:text-[11px] font-medium tracking-widest py-2 px-4 text-center uppercase border-b border-[#4D3E2F]/30 flex items-center justify-center gap-2 select-none">
-        <span>Complimentary Express Shipping on Handcrafted Leather Bags</span>
+      <div className="bg-[#2A2219] text-[#F5F2EC] text-[10px] sm:text-[11px] font-medium tracking-widest py-2 px-3 text-center uppercase border-b border-[#4D3E2F]/30 flex items-center justify-center gap-2 select-none w-full max-w-full overflow-hidden">
+        <span className="truncate">Complimentary Express Shipping on Handcrafted Leather Bags</span>
         <span className="hidden md:inline">•</span>
-        <span className="hidden md:inline text-amber-300/90">Lifetime Atelier Guarantee</span>
+        <span className="hidden md:inline text-amber-300/90 whitespace-nowrap">Lifetime Atelier Guarantee</span>
       </div>
 
-      <header className="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-stone-200/80 transition-all">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-stone-200/80 transition-all w-full max-w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Mobile hamburger menu button with 44x44px touch target */}
             <div className="flex items-center lg:hidden">

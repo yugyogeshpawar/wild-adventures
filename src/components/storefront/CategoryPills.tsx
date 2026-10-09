@@ -21,7 +21,8 @@ export function CategoryPills({
   const allCategories = [allOption, ...categories];
 
   return (
-    <div className="flex items-center gap-2 overflow-x-auto no-scrollbar scrollbar-none py-1.5 touch-pan-x w-full">
+    <div className="w-full max-w-full min-w-0 overflow-hidden">
+      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar scrollbar-none py-1.5 touch-pan-x w-full min-w-0 overscroll-x-contain">
       {allCategories.map((cat) => {
         const isActive = activeSlug === cat.slug;
         const isHandbag = cat.slug === "hand-bag";
@@ -62,6 +63,7 @@ export function CategoryPills({
           </button>
         );
       })}
+      </div>
     </div>
   );
 }
